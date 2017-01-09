@@ -1,0 +1,81 @@
+<!DOCTYPE html><!--base for all pages.-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title>{{settings.metadata.title}}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="shortcut icon" href="{{root}}favicon.ico">
+  <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+
+
+  <link rel="stylesheet" href="{{root}}assets/css/app.css"/>
+</head>
+<body id="thebody">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    {{> top}}
+
+    {{> header-original}}
+            <div class="container main_container">
+            <noscript>
+            <div class="alert alert-danger hide">
+            <h1>{% trans %}Your browser does not have Javascript enabled.  Please turn it on to use this website.{% endtrans %}</h1>
+            </div>
+            </noscript>
+
+              {{> body}}
+            </div>
+
+        <div class="container footercontainer">
+
+          {{#if settings.user.staff}}
+                <hr>
+                    <!-- jinja2/admin/admin_footer.html -->
+                    {{> admin-footer}}
+                    <div id="staff_flag"></div>
+          {{/if}}
+
+          {{#if settings.user.proctor}}
+              <!-- jinja2/admin/proctor_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.interviewer}}
+              <!-- jinja2/admin/interviewer_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.sales_user}}
+              <!-- jinja2/admin/sales_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.video_user}}
+              <!-- jinja2/admin/interviewmgmt_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.school_crm_manager}}
+              <!-- jinja2/admin/schoolcrmmanager_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.student_crm_manager}}
+              <!-- jinja2/admin/student_crm_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.any_assessment_user_test}}
+              <!-- jinja2/admin/assessment_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.rater}}
+              <!-- jinja2/admin/rater_footer.html -->
+          {{/if}}
+
+          {{#if settings.user.researcher}}
+              <!-- jinja2/admin/rater_footer.html -->
+          {{/if}}
+      </div>
+
+    {{> jszone}}
+</body>
+</html>

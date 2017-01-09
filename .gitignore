@@ -1,0 +1,14 @@
+# Gitignore for Vericant Prototyping
+
+# Filesystem Oddities
+.DS_Store
+.tmp
+.log
+
+# Nodejs
+npm-debug.log
+node_modules
+bower_components
+
+# Application-Specific Ignores
+dist

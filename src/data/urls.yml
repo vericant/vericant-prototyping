@@ -1,0 +1,9 @@
+landing-list:
+  -
+    title: "SEE-D Demo"
+    description: "Design Prototype showcasing new SEE-D functionality."
+    link:
+      url: /seed/
+    tags:
+      - "SEE-D"
+      - "modular"
