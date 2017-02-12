@@ -1,9 +1,32 @@
 <header class="header">
   <h1 class="logo">VERICANT</h1>
   <nav class="navigation">
-    <ul>
+    <ul class="dropdown menu" data-dropdown-menu>
       {{#each urls.navigation}}
-        <li><a href="{{url}}">{{title}}</a></li>
+        <li>
+          <a href="{{url}}">{{title}}</a>
+          {{#if sub-nav}}
+            <ul class="menu">
+              {{#each sub-nav}}
+                <li><a href="{{url}}">{{title}}</a>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+    <ul class="portal-nav dropdown menu" data-dropdown-menu>
+      {{#each urls.portal-list}}
+        <li>
+          <a href="{{url}}">{{title}}</a>
+          {{#if sub-nav}}
+            <ul class="menu">
+              {{#each sub-nav}}
+                <li><a href="{{url}}">{{title}}</a>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </li>
       {{/each}}
     </ul>
   </nav>

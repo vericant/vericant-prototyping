@@ -3,16 +3,33 @@ navigation:
     title: Home
     url: "#"
   -
-    title: "For Students"
+    title: About
+    url: "#"
+    sub-nav:
+      -
+        title: The Vericant Interview
+        url: "#"
+      -
+        title: SEE Score
+        url: "#"
+      -
+        title: Vericant Partners
+        url: "#"
+      -
+        title: Testimonials
+        url: "#"
+  -
+    title: "News"
+    url: "#"
+portal-list:
+  -
+    title: "Student"
     url: "#"
   -
-    title: "Partners"
+    title: "School"
     url: "#"
   -
-    title: "Testimonials"
-    url: "#"
-  -
-    title: "SEE"
+    title: "Partner"
     url: "#"
 
 landing-list:
