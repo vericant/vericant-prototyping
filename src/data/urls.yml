@@ -1,3 +1,20 @@
+navigation:
+  -
+    title: Home
+    url: "#"
+  -
+    title: "For Students"
+    url: "#"
+  -
+    title: "Partners"
+    url: "#"
+  -
+    title: "Testimonials"
+    url: "#"
+  -
+    title: "SEE"
+    url: "#"
+
 landing-list:
   -
     title: "SEE-D Demo"

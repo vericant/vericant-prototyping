@@ -8,6 +8,7 @@
 
   <link rel="shortcut icon" href="{{root}}favicon.ico">
   <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 
 
   <link rel="stylesheet" href="{{root}}assets/css/app.css"/>
@@ -30,7 +31,7 @@
               {{> body}}
             </div>
 
-        <div class="container footercontainer">
+        <div class="container footer_container">
 
           {{#if settings.user.staff}}
                 <hr>
@@ -74,6 +75,8 @@
           {{#if settings.user.researcher}}
               <!-- jinja2/admin/rater_footer.html -->
           {{/if}}
+
+          {{> footer-original}}
       </div>
 
     {{> jszone}}

@@ -1,0 +1,25 @@
+.header {
+  @include flex-grid-row();
+  @include flex-align(left, middle);
+
+  .logo {
+    @include flex-grid-column(shrink, 0);
+    width: 305px;
+    height: 67px;
+    background: url(/assets/img/Vericant_logo.png) no-repeat;
+    text-indent: -10000rem;
+    font-color: white;
+  }
+
+  .navigation {
+    @include flex-grid-column();
+    ul {
+      float: right;
+      margin: 0;
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+    }
+  }
+}

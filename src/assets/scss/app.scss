@@ -46,3 +46,7 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
+
+// Custom Style Groups
+@import 'fonts';
+@import 'global/**/*.scss'

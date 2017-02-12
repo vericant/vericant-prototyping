@@ -183,7 +183,7 @@ gulp.task('development', function(done) {
 
 // Build the site, run the server, and watch for file changes
 gulp.task('watch', function() {
-  gulp.watch(['./src/{layouts,pages,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/{layouts,pages,partials}/**/*.{html,hbs}'], ['pages:reset']);
   gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
