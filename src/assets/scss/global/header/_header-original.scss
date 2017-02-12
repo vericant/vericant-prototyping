@@ -1,6 +1,8 @@
 .header {
   @include flex-grid-row();
   @include flex-align(left, middle);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .logo {
     @include flex-grid-column(shrink, 0);
@@ -12,14 +14,48 @@
   }
 
   .navigation {
+    text-align: right;
     @include flex-grid-column();
-    ul {
-      float: right;
+    ul:not(.submenu) {
+      display: inline-block;
       margin: 0;
       li {
         display: inline-block;
-        margin: 0 1rem;
+        margin: 0 .5rem;
+      }
+
+      &.portal-nav {
+        position: relative;
+        border: 1px solid $light-gray;
+        &:after {
+          position: absolute;
+          left: 0;
+          right: 0;
+          content: "PORTALS";
+          top: 0;
+          margin-top: -1.25rem;
+          text-align: center;
+          //border-bottom: 1px solid $dark-gray;
+          font: {
+            size: .75rem;
+            weight: bold;
+          }
+        }
+        li {
+          margin: 0 .25rem;
+
+          a {
+            padding: 1rem .5rem;
+          }
+        }
       }
     }
+  }
+
+
+  .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    margin-top: -1px;
+    border-top-width: 5px;
+    border-right-width: 5px;
   }
 }
