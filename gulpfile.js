@@ -38,7 +38,7 @@ var PATHS = {
   javascript: [
     'node_modules/foundation-sites/vendor/jquery/dist/jquery.js',
     'node_modules/what-input/what-input.js',
-    'node_modules/foundation-sites/dist/foundation.js',
+    'node_modules/foundation-sites/dist/js/foundation.js',
     'node_modules/object-fit-images/dist/ofi.browser.js',
     'src/assets/js/**/*.js',
     'src/assets/js/app.js'
@@ -222,7 +222,8 @@ gulp.task('minify-css', function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  gulp.watch(['./src/{layouts,pages,partials}/**/*.{html,hbs}'], ['pages:reset']);
+  gulp.watch(['./src/pages/**/*.{html,hbs,handlebars}'], ['pages', browser.reload]);
+  gulp.watch(['./src/{layouts,partials}/**/*.{html,hbs,handlebars}'], ['pages:reset']);
   gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
