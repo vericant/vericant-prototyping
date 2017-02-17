@@ -11,4 +11,4 @@ class BookingShellView():
         resp = super(BookingShellView, self).dispatch(*args, **kwargs)
         return resp
 
-booking_shell = BookingShellView.as_view()
+booking_shell = BookingShellView
