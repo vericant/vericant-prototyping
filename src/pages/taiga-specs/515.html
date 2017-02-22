@@ -1,0 +1,23 @@
+---
+  title: US 515 - Student Registration Counselor Information form
+---
+
+<div class="lt-section-padding-medium">
+  <div class="row align-center">
+    <div class="columns small-10">
+      {{>heading-block data=taiga.515.heading-block}}
+      {{>formContainer data=taiga.515.initialForm cssClass='form-full'}}
+      <div class="row small-collapse align-middle align-center" style="border: 1px solid; margin-top: 1rem; padding-top: 1rem">
+        <h5 class="type-subtitle-medium text-center">
+          The following form elements will appear under "Company/Affiliation" if OTHER is selected
+        </h5>
+        {{>formContainer data=taiga.515.companyForm}}
+        <h5 class="type-subtitle-xsmall lt-section-padding-small">
+          <ul>
+            <li>Individual Information will also appear if you choose OTHER on the Individual-portion of the form above</li>
+          </ul>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>

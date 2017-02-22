@@ -49,4 +49,6 @@
 
 // Custom Style Groups
 @import 'fonts';
-@import 'global/**/*.scss'
+@import 'global/**/*.scss';
+@import 'modules/global/**/*.scss';
+@import 'modules/components/**/*.scss';

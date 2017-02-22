@@ -1,0 +1,53 @@
+515:
+  heading-block:
+    title: Student Registration Form - Contact Section
+    subtitle: >
+      These are the form fields to consolidate Agent/Counselor/Consultant fields on the Student Profile/Registration Form
+      The current styling patterns can be used, versus the ones displayed here
+  initialForm:
+    -
+      title: "Are you using a consultant/agent/counselor?"
+      type: "select"
+      default: "NO"
+      options:
+        - "YES"
+        - "NO"
+    -
+      title: "If so, please select the company or affiliation. If not listed, choose OTHER. If independent, choose N/A."
+      type: "select"
+      placeholder: "Consultant Company"
+      options:
+        - "BJ - Aoji Edu"
+        - "BJ - Art Life"
+        - "BJ - Can-Achieve"
+        - "BJ - CEDCA"
+        - "BJ - Due West"
+        - "BJ - EduLinkUS"
+    -
+      title: "Are you associated/working with a specific individual? If you don't see your consultant listed, choose OTHER. If no individual has been assigned to you from this organization, choose N/A"
+      type: "select"
+      placeholder: "Agent or individual"
+      options:
+        - "John Doe"
+        - "Mark Johnson"
+        - "Scarlet Johansenn"
+        - "Guy Super"
+        - "Brandon Wade"
+        - "Rory Michaelson"
+        - "Rachel Princess Amidala"
+  companyForm:
+    -
+      title: "Education Company/Affiliation Name"
+      type: "input"
+    -
+      title: "Company Website"
+      type: "input"
+    -
+      title: "Individual Associate/Consultant Name"
+      type: "input"
+    -
+      title: "Individual Associate/Consultant E-Mail"
+      type: "input"
+    -
+      title: "Individual Associate/Consultant Phone"
+      type: "input"

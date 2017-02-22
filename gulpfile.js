@@ -222,8 +222,7 @@ gulp.task('minify-css', function() {
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy', browser.reload]);
-  gulp.watch(['./src/pages/**/*.html'], ['pages', browser.reload]);
-  gulp.watch(['./src/{layouts,partials}/**/*.html'], ['pages:reset']);
+  gulp.watch(['./src/{layouts,pages,partials}/**/*.{html,hbs}'], ['pages:reset']);
   gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
