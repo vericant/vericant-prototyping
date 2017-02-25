@@ -1,3 +1,7 @@
 <div class="input-wrapper text-center">
-  <button class="button primary" type="submit">{{title}}</button>
+  {{#if url}}
+    <a class="button primary" href="{{url}}">{{title}}</a>
+  {{else}}
+    <button class="button primary" type="submit">{{title}}</button>
+  {{/if}}
 </div>

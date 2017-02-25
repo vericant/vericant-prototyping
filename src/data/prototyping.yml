@@ -6,6 +6,9 @@ navigation:
       -
         title: "Students++"
         url: "/students"
+      -
+        title: "Admin Dashboard"
+        url: "/dashboard"
   -
     title: Taiga Prototypes
     url: "#"
