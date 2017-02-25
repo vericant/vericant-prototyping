@@ -1,0 +1,46 @@
+<!DOCTYPE html><!--base for all pages.-->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title>{{title}}</title>
+  <meta name="description" content="">{{description}}</meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="shortcut icon" href="{{root}}favicon.ico">
+  <link rel="apple-touch-icon" href="{{root}}apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="{{root}}assets/css/app.css"/>
+</head>
+<body id="thebody">
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  {{> proto-header}}
+
+  {{> top}}
+
+  {{> header-original}}
+  {{> breadcrumbs-dash}}
+    <div class="header header-nav dashboard-header">
+      {{> header-nav data=urls.navigation-dash}}
+    </div>
+
+    <div class="container main_container">
+      <div class="main_content">
+        {{> body}}
+      </div>
+      <div class="rails_content right">
+        {{> rails-dashboard}}
+      </div>
+    </div>
+
+
+    <div class="container footer_container">
+      {{> footer-admin}}
+    </div>
+
+  {{> jszone}}
+</body>
+</html>

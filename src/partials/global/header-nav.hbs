@@ -1,0 +1,41 @@
+{{#each data}}
+  <div class="header header-nav header-nav-{{slug}}">
+    <nav class="navigation">
+    <ul class="navigation-menu" role="menubar" aria-hidden="false">
+        <li class="mobile-menu hide-for-large" role="menuitem">
+          <button class="hamburger-button" role="menuitem" data-toggle="offCanvas">
+            <span class="hamburger-toggle"></span>
+            <span class="show-for-sr">Menu</span>
+          </button>
+        </li>
+        <li class="navigation-logo" role="menuitem">
+          <a class="header-title" href="{{url}}" tabindex="0" title="{{title}}">{{title}}</a>
+        </li>
+        {{#each nav-items}}
+          {{#if sub-nav}}
+            <li class="menu-item has-submenu show-for-large" role="menuitem" aria-haspopup="true">
+              <button type="button" class="menu-link has-submenu " tabindex="0" data-toggle="{{slug}}" data-hash="{{title}}">{{title}}</button>
+              <div id="{{slug}}" class="menu-submenu-wrapper is-submenu dropdown-pane" data-dropdown data-hover="true" data-hover-pane="true" data-v-offset="0" data-h-offset="0" data-hover-delay="0">
+                <ul class="menu-submenu" aria-hidden="true" role="menu">
+                  {{#each sub-nav}}
+                    <li role="menuitem" class="menu-submenu-item">
+                        <a href="{{url}}" class="menu-submenu-link">
+                            <div class="submenu-item-icon icon-circle-large global-sprite @hash" alt="{{slug}}"></div>
+                            <h4 class="submenu-item-header type-header-small">{{title}}</h4>
+                            <p class="submenu-item-desc">{{description}}</p>
+                        </a>
+                    </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </li>
+          {{else}}
+            <li class="menu-item show-for-large" role="menuitem">
+              <a href="{{url}}" class="menu-link" tabindex="0">{{title}}</a>
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
+{{/each}}

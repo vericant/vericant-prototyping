@@ -1,0 +1,8 @@
+<div class="container-border">
+  <div class="inner-row">
+    <h2 class="title type-header-medium">{{title}}</h2>
+    {{> input title="" placeholder="Agency Name"}}
+    {{> select title="" options=dashboard-widgets.widget-SchoolQuickSearch.filters}}
+  </div>
+  {{> tab-container data=dashboard-widgets.widget-TeamQuickSearch.tabs}}
+</div>

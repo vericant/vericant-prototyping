@@ -41,3 +41,50 @@ landing-list:
     tags:
       - "SEE-D"
       - "modular"
+navigation-dash:
+  -
+    title: "Vericant Dashboard"
+    slug: "dashboard"
+    url: "/dashboard"
+    nav-items:
+      -
+        title: "Student CRM"
+        slug: "student-crm"
+        sub-nav:
+          -
+            title: "Student CRM Dashboard"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Applicants"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Teams"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Login as Students"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Quick Search"
+            url: ""
+            icon: ""
+            description: ""
+      -
+        title: "School CRM"
+        slug: "school-crm"
+      -
+        title: "Interview Management"
+        slug: "interviews"
+      -
+        title: "Scheduling"
+        slug: "scheduler"
+      -
+        title: "Users"
+        slug: "users"

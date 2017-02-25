@@ -23,6 +23,12 @@ small {
   }
 }
 
+.text-center {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 auto;
+  }
+}
+
 // Mixins
 @mixin font-over-primary ($size: 16px, $weight: 400) {
   color: $white;

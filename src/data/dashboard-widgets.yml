@@ -1,0 +1,265 @@
+widget-DashboardStats:
+  filters:
+    - 2017
+    - 2016
+    - 2015
+    - 2014
+widget-SchoolQuickSearch:
+  filters:
+    - "Filter"
+    - "Undergraduate"
+    - "Graduate"
+    - "Boarding"
+  tabs:
+    slug: "school-quick-search"
+    cssClass: "tab-slim"
+    tab-header:
+      - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+    tab-content:
+      -
+        ref: A
+        content: >
+          <ul>
+            <li>Appleby (B)</li>
+            <li>Asheville (B)</li>
+            <li>Athenian (B)</li>
+            <li>Augustana (U)</li>
+          </ul>
+      -
+        ref: B
+        content: >
+          <ul>
+            <li>Babson (U)</li>
+            <li>Bakersfield Christian (B)</li>
+            <li>Baltimore Friends (B)</li>
+            <li>Bard (U)</li>
+            <li>Beacon (B)</li>
+            <li>Bentley (U)</li>
+            <li>Binghamton (U)</li>
+            <li>Blair (B)</li>
+            <li>Bolles (B)</li>
+            <li>Boston (U)</li>
+            <li>Bowdoin (U)</li>
+            <li>Brandeis (U)</li>
+            <li>Brimmer (B)</li>
+            <li>Brooks (B)</li>
+            <li>Bucknell (U)</li>
+          </ul>
+      -
+        ref: C
+        content: TEST
+      -
+        ref: D
+        content: TEST
+      -
+        ref: E
+        content: TEST
+      -
+        ref: F
+        content: TEST
+      -
+        ref: G
+        content: TEST
+      -
+        ref: H
+        content: TEST
+      -
+        ref: I
+        content: TEST
+      -
+        ref: J
+        content: TEST
+      -
+        ref: K
+        content: TEST
+      -
+        ref: L
+        content: TEST
+      -
+        ref: M
+        content: TEST
+      -
+        ref: N
+        content: TEST
+      -
+        ref: O
+        content: TEST
+      -
+        ref: P
+        content: TEST
+      -
+        ref: Q
+        content: TEST
+      -
+        ref: R
+        content: TEST
+      -
+        ref: S
+        content: TEST
+      -
+        ref: T
+        content: TEST
+      -
+        ref: U
+        content: TEST
+      -
+        ref: V
+        content: TEST
+      -
+        ref: W
+        content: TEST
+      -
+        ref: X
+        content: TEST
+      -
+        ref: Y
+        content: TEST
+      -
+        ref: Z
+        content: TEST
+widget-TeamQuickSearch:
+  filters:
+    - "Filter"
+    - "Undergraduate"
+    - "Graduate"
+    - "Boarding"
+  tabs:
+    slug: "team-quick-search"
+    cssClass: "tab-slim"
+    tab-header:
+      - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+    tab-content:
+      -
+        ref: A
+        content: >
+          <ul>
+            <li>Ackerbee Learning Center</li>
+            <li>Aeron Educational</li>
+            <li>AMT Learning</li>
+            <li>A-Z Edu</li>
+          </ul>
+      -
+        ref: B
+        content: TEST
+      -
+        ref: C
+        content: TEST
+      -
+        ref: D
+        content: TEST
+      -
+        ref: E
+        content: TEST
+      -
+        ref: F
+        content: TEST
+      -
+        ref: G
+        content: TEST
+      -
+        ref: H
+        content: TEST
+      -
+        ref: I
+        content: TEST
+      -
+        ref: J
+        content: TEST
+      -
+        ref: K
+        content: TEST
+      -
+        ref: L
+        content: TEST
+      -
+        ref: M
+        content: TEST
+      -
+        ref: N
+        content: TEST
+      -
+        ref: O
+        content: TEST
+      -
+        ref: P
+        content: TEST
+      -
+        ref: Q
+        content: TEST
+      -
+        ref: R
+        content: TEST
+      -
+        ref: S
+        content: TEST
+      -
+        ref: T
+        content: TEST
+      -
+        ref: U
+        content: TEST
+      -
+        ref: V
+        content: TEST
+      -
+        ref: W
+        content: TEST
+      -
+        ref: X
+        content: TEST
+      -
+        ref: Y
+        content: TEST
+      -
+        ref: Z
+        content: TEST

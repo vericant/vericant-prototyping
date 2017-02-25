@@ -1,0 +1,16 @@
+<div class="tab-group {{data.cssClass}}">
+  <ul id="{{data.slug}}" class="tab-header tabs" data-tabs={{data.slug}}>
+    {{#each data.tab-header}}
+      <li class="tab-heading tabs-title {{#if @index}}{{else}}is-active{{/if}}" role="presentation">
+        <a href="#{{../data.slug}}-{{this}}" role="tab" aria-controls="{{../data.slug}}-{{this}}" aria-selected="" id="{{../data.slug}}-{{this}}-label">{{.}}</a>
+      </li>
+    {{/each}}
+  </ul>
+  <div class="tab-container tabs-content" data-tabs-content="{{data.slug}}">
+    {{#each data.tab-content}}
+      <div id="{{../data.slug}}-{{ref}}" class="tabs-panel lt-section-padding-medium {{#if @index}}{{else}}is-active{{/if}}" role="tabpanel">
+        <div class="type-body-copy">{{{content}}}</div>
+      </div>
+    {{/each}}
+  </div>
+</div>

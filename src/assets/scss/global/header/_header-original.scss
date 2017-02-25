@@ -1,8 +1,12 @@
 .header {
   @include flex-grid-row();
   @include flex-align(left, middle);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
+  &:not(.header-nav) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
 
   .logo {
     @include flex-grid-column(shrink, 0);
