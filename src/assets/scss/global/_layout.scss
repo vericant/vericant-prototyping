@@ -29,6 +29,9 @@ $module: '.lt';
       &-white {
           background-color: $white;
       }
+      &-vericantblue {
+        background-color: $primary-color;
+      }
   }
 
   &-wrapper {
@@ -216,6 +219,67 @@ $module: '.lt';
 
       &>h1 {margin-bottom: 1rem;}
     }
+  }
+
+  &-section-margin {
+    &-large {
+      margin-top: 4rem;
+      margin-top: 4rem;
+
+      &-full {
+        margin: 4rem;
+      }
+
+      &-side {
+        margin-left: 4rem;
+        margin-right: 4rem;
+      }
+    }
+
+    &-medium {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      &-full {
+        margin: 2rem;
+      }
+
+      &-side {
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &-small {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      &-full {
+        margin: 1rem;
+      }
+
+      &-side {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &-margin-lower {
+    margin-bottom: 2rem;
+  }
+
+  &-box-shadow {
+    &-dark {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+    &-light {
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3), 0 1px 0 rgba(255, 255, 255, 0.0);
+    }
+  }
+
+  &-border-radius {
+    border-radius: $global-small-radius;
   }
 
   /*

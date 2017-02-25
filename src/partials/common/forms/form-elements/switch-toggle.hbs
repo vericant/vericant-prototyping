@@ -1,0 +1,12 @@
+<div class="input-wrapper {{cssClass}}">
+  <label>
+    {{title}}{{#if required}}<small class='required'>Required</small>{{/if}}
+    <div class="switch-toggle">
+      {{#each options}}
+        <input class="switch-toggle" id="{{this}}" type="radio" name="toggle" value="{{this}}">
+        <label for="{{this}}">{{this}}</label>
+      {{/each}}
+      <a><span></span></a>
+    </div>
+  </label>
+</div>

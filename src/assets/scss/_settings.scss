@@ -81,7 +81,7 @@ $body-font-family: "Source Sans Pro", "Open Sans", 'Helvetica Neue', Helvetica, 
 // $global-padding: 1rem;
 // $global-weight-normal: normal;
 // $global-weight-bold: bold;
-// $global-radius: 0;
+$global-radius: 4px;
 // $global-text-direction: ltr;
 // $global-flexbox: false;
 // $print-transparent-backgrounds: true;
@@ -325,7 +325,7 @@ $global-lg-radius: 12px;
 // $button-background-hover: scale-color($button-background, $lightness: -15%);
 // $button-color: $white;
 // $button-color-alt: $black;
-// $button-radius: $global-radius;
+$button-radius: $global-radius;
 // $button-sizes: (
 //   tiny: 0.6rem,
 //   small: 0.75rem,

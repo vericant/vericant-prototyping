@@ -1,9 +1,15 @@
-<div class="lt-bg-vericantblue">
-  <div class="row">
-    <div class="columns small-12 lt-margin-lower">
-      <h1 class="type-header-xlarge">Vericant Administrator System</h1>
-      <h2 class="type-header-small">Login<h2>
+<div class="lt-bg-vericantblue lt-section-padding-medium">
+  <div class="lt-section-margin-medium-side lt-section-padding-medium lt-bg-white lt-box-shadow-light lt-border-radius">
+    <div class="row align-center lt-section-padding-large">
+      <div class="columns small-12 medium-8 lt-margin-lower text-center">
+        <h1 class="type-header-xlarge">Vericant Administrator System</h1>
+        <h2 class="type-subtitle-xlarge">Login<h2>
+      </div>
+      <div class="columns small-12 medium-8 lt-margin-lower">
+        <div class="row align-center">
+          {{> formContainer data=dashboard.admin-login cssClass="align-center form-full"}}
+        </div>
+      </div>
     </div>
-    <div class="columns small-12 lt-margin-lower">
-      {{> formContainer data=dashboard.admin-login }}
-    </div>
+  </div>
+</div>

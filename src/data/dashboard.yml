@@ -7,5 +7,19 @@ admin-login:
   -
     title: "Password"
     type: "input"
-    placeholder "Beijing2017"
+    placeholder: "Beijing2017"
     disabled: true
+  -
+    title: ""
+    type: "switch-toggle"
+    default: "Dashboard"
+    cssClass: "full"
+    options:
+      - "Dashboard"
+      - "Database Manager"
+      - "Scheduling"
+      - "Student CRM"
+      - "School CRM"
+  -
+    title: "Login"
+    type: "submit"
