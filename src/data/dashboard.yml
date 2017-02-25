@@ -1,0 +1,11 @@
+admin-login:
+  -
+    title: "E-Mail"
+    type: "input"
+    placeholder: "aaron.baideme@vericant.com"
+    disabled: true
+  -
+    title: "Password"
+    type: "input"
+    placeholder "Beijing2017"
+    disabled: true

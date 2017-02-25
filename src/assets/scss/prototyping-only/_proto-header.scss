@@ -1,0 +1,54 @@
+.proto-header {
+  background-color: $dark-gray;
+  color: $white;
+
+  &-inner {
+    @include flex-grid-row();
+    @include flex-align(left, middle);
+
+    .title, .subtitle {
+      @include flex-grid-column(shrink);
+
+    }
+
+    .title {
+      font-size: 1rem;
+    }
+    .subtitle {
+      font-size: .85rem;
+      font-weight: 100;
+    }
+  }
+
+  .navigation {
+    @include flex-grid-column(expand);
+    ul:not(.submenu) {
+      display: inline-block;
+      margin: 0;
+      float: right;
+      li {
+        display: inline-block;
+        margin: 0 .5rem;
+
+        &.is-dropdown-submenu-parent {
+          &>a {
+            color: white;
+
+            &:after {
+              border-color: $highlight-blue transparent;
+            }
+          }
+
+          .is-dropdown-submenu {
+            min-width: 140px;
+          }
+        }
+
+        a {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

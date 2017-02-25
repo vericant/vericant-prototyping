@@ -1,0 +1,21 @@
+<div class="proto-header">
+  <div class="proto-header-inner">
+    <h2 class="title">Vericant Prototyping</h2>
+    <h3 class="subtitle">Prepared By: Aaron Baideme</h3>
+    <nav class="navigation">
+      <ul class="dropdown menu" data-dropdown-menu>
+        {{#each prototyping.navigation}}
+          <li>
+            <a href="{{url}}">{{title}}</a>
+            {{#if sub-nav}}
+              <ul class="menu">
+                {{#each sub-nav}}
+                  <li><a href="{{url}}">{{title}}</a>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+navigation:
+  -
+    title: Prototyping Paths
+    url: "#"
+    sub-nav:
+      -
+        title: "Students++"
+        url: "/students"
+  -
+    title: Taiga Prototypes
+    url: "#"
+    sub-nav:
+      -
+        title: 515
+        url: "/taiga-proto/515.html"
