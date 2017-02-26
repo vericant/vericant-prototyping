@@ -53,9 +53,10 @@ navigation-dash:
         sub-nav:
           -
             title: "Student CRM Dashboard"
-            url: ""
-            icon: ""
-            description: ""
+            url: "/students/landing.html"
+            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Applicants"
             url: ""
@@ -79,12 +80,80 @@ navigation-dash:
       -
         title: "School CRM"
         slug: "school-crm"
+        sub-nav:
+          -
+            title: "School CRM Dashboard"
+            url: "/schools/landing.html"
+            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "School User Management"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Login as School"
+            url: ""
+            icon: ""
+            description: >
+              <p>Currently set as Fordham (U)</p>
+              Reset
+          -
+            title: "Quick Search"
+            url: ""
+            icon: ""
+            description: ""
       -
         title: "Interview Management"
         slug: "interviews"
+        sub-nav:
+          -
+            title: "Interview Management Dashboard"
+            url: "/interview-processing/landing.html"
+            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Interview Scheduling Report"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Interview Data Entry"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Interviewed Students Report"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Quick Search"
+            url: ""
+            icon: ""
+            description: ""
       -
         title: "Scheduling"
         slug: "scheduler"
+        sub-nav:
+          -
+            title: "Scheduler Dashboard"
+            url: "/scheduler/landing.html"
+            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Interview Cities"
+            url: ""
+            icon: ""
+            description: ""
+          -
+            title: "Interview Locations"
+            url: ""
+            icon: ""
+            description: ""
       -
         title: "Users"
         slug: "users"

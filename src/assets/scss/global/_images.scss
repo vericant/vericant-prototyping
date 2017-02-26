@@ -1,0 +1,16 @@
+// Classes
+
+[data-imagizer] {
+    img {
+        object-fit: cover;
+        font-family: 'object-fit: cover';
+        width:100% !important;
+        height:100% !important;
+    }
+}
+[data-imagizer="fit"] {
+    img {
+        object-fit: contain;
+        font-family: 'object-fit: contain';
+    }
+}

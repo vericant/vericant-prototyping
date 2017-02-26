@@ -1,8 +1,4 @@
 @mixin ew-navigation-desktop{
-
-  position: relative;
-
-
   &-menu {
       @include flex-align(middle);
       line-height: 84px;
@@ -11,10 +7,8 @@
 
   .menu {
     &-item {
-      display: flex;
       @include flex-grid-column(shrink, 0);
-      @include flex-align(middle);
-      border-right: 1px solid map-get($foundation-palette, primary);
+      @include flex-align(right);
       padding-left: 0;
       padding-right: 0;
     }
@@ -57,6 +51,7 @@
 
   .menu-submenu {
     @include flex-grid-row();
+    max-width: 90rem;
     padding: 0;
     list-style-type: none;
     line-height: normal;
@@ -66,7 +61,7 @@
     }
 
     &-item {
-      @include flex-grid-column(shrink, 15px);
+      @include flex-grid-column();
       @include flex-align(top);
       display: flex;
       text-align: center;
@@ -207,23 +202,27 @@
 
 
 .header-nav {
-
-.navigation {
   background: map-get($foundation-palette, primary);
+.navigation {
   width: 100%;
   z-index: 10;
 
   &-logo {
     @include flex-grid-column(shrink);
     display: flex;
-    position: absolute;
-    left: 0;
-    width: auto;
     margin: initial;
 
     .header-title {
       font-size: 2.2rem;
       color: white;
+    }
+  }
+
+  &-items {
+    @include flex-grid-column(expand);
+
+    &>.row {
+      margin-right: -0.9375rem;
     }
   }
 
@@ -281,7 +280,6 @@
 
   @include breakpoint(medium) {
     @include ew-navigation-desktop;
-
   }
 }
 
@@ -297,6 +295,8 @@
 
 .dropdown-pane {
   visibility: hidden;
+  border: none;
+  border-radius: 0;
   &.is-open {
     visibility: visible;
   }
@@ -395,41 +395,9 @@ body.join-the-movement {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* ORIGINAL HEADER */
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 10;
-  left: 0;
-  &-top {
-    display:none;
-    @include breakpoint(large) {
-      @include flex-grid-row();
-      @include flex-align(right);
-    }
-  }
-
-  @include breakpoint(large) {
-    position: relative;
-  }
-
-  @include breakpoint(medium down) {
-      position: fixed;
-      top: 0;
-  }
 
   &-link {
     color: $dark-gray;
@@ -446,105 +414,4 @@ body.join-the-movement {
 
 .menu-language {
   font-size: map-get($font-sizes, "small");
-}
-
-
-.user {
-    &-menu {
-        font-size: map-get($font-sizes, "small");
-        padding-left: 2.5rem;
-
-        .is-dropdown-submenu-parent.is-down-arrow > a::after {
-            top: 0.175rem;
-        }
-    }
-
-    &-submenu {
-        display:none;
-        left:0px;
-        top:100%;
-        margin:0px !important;
-        z-index: 100;
-
-        .is-submenu-item {
-            line-height: 2.5rem;
-            text-align:left;
-
-            a {
-                padding-left:10px;
-                line-height:1;
-                color: $dark-gray;
-                font-weight: 500;
-            }
-
-            &:hover {
-                background: $primary-color;
-
-                a {
-                    color: white;
-                }
-            }
-        }
-    }
-}
-.user-menu {
-
-}
-
-.profile-submenu {
-
-}
-
-
-/*@-moz-document url-prefix() {
-html[dir=ltr] .is-dropdown-submenu-parent.is-down-arrow > a::after{
-    #{$global-right}:   -15px!important;
-}
-}*/
-.user-menu{
-    .header-link{
-        .header-link-username{
-            margin-left:0.5rem;
-        }
-
-        .header-link-notification{
-            margin-left: 0.2rem;
-            background-image: url(/EmpowerWomen/img/notificationicon.png);
-            width: 15px;
-            height: 16px;
-            color: #fff;
-            text-align: center;
-            margin-bottom: 15px;
-            font-size: 0.65em;
-            margin-top: 0.1rem;
-            line-height: 16px;
-            padding-right: 1px;
-        }
-    }
-}
-html[dir=ltr] {
-     .header-link-username{
-            float:left;
-        }
-
-        .header-link-notification{
-            float:left;
-        }
-}
-html[dir=rtl] {
-    .header-link-username{
-        float:right;
-    }
-
-    .header-link-notification{
-        float:right;
-    }
-    .is-dropdown-submenu-parent.is-down-arrow a{
-        padding-left: 0.9em;
-        padding-right: 0px;
-        &::after{
-            left: 0px;
-            right: 0px;
-        }
-    }
 }

@@ -47,7 +47,7 @@
 // ---------
 //
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: 125rem;
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #223f6d,
@@ -78,7 +78,7 @@ $highlight-color: rgb(223, 62, 164); // For Development Purposes Only. Using to 
 $body-font-family: "Source Sans Pro", "Open Sans", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 // $body-antialiased: true;
 // $global-margin: 1rem;
-// $global-padding: 1rem;
+$global-padding: 1rem;
 // $global-weight-normal: normal;
 // $global-weight-bold: bold;
 $global-radius: 4px;

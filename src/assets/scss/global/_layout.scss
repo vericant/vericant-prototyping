@@ -14,19 +14,12 @@ body {height: 100%;}
     margin-bottom: 1rem;
 
     .main_content {
-      @include flex-grid-column(10, 1rem);
-      padding-left: 0;
+      @include flex-grid-column(10);
+      padding-left: 0 !important;
     }
 
     .rails_content {
-      @include flex-grid-column(2, 1rem);
-
-      .left {
-        padding-left: 0;
-      }
-      &.right {
-        padding-right: 0;
-      }
+      @include flex-grid-column(2);
     }
   }
 }

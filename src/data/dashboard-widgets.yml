@@ -142,6 +142,132 @@ widget-SchoolQuickSearch:
       -
         ref: Z
         content: TEST
+widget-StudentQuickSearch:
+  filters:
+    - "School Type"
+    - "Undergraduate"
+    - "Graduate"
+    - "Boarding"
+  filters2:
+    - "Arrange By Name"
+    - "English First Name"
+    - "Chinese First Name"
+    - "Chinese Last Name"
+  tabs:
+    slug: "student-quick-search"
+    cssClass: "tab-slim"
+    tab-header:
+      - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+    tab-content:
+      -
+        ref: A
+        content: >
+          <ul>
+            <li>(Adam) Xiaoyu Wang</li>
+            <li>(Aeron) Boyang Zheng</li>
+            <li>(Aaron) Linxiao Peng</li>
+            <li>(Alex) Zongwen Ping</li>
+          </ul>
+      -
+        ref: B
+        content: TEST
+      -
+        ref: C
+        content: TEST
+      -
+        ref: D
+        content: TEST
+      -
+        ref: E
+        content: TEST
+      -
+        ref: F
+        content: TEST
+      -
+        ref: G
+        content: TEST
+      -
+        ref: H
+        content: TEST
+      -
+        ref: I
+        content: TEST
+      -
+        ref: J
+        content: TEST
+      -
+        ref: K
+        content: TEST
+      -
+        ref: L
+        content: TEST
+      -
+        ref: M
+        content: TEST
+      -
+        ref: N
+        content: TEST
+      -
+        ref: O
+        content: TEST
+      -
+        ref: P
+        content: TEST
+      -
+        ref: Q
+        content: TEST
+      -
+        ref: R
+        content: TEST
+      -
+        ref: S
+        content: TEST
+      -
+        ref: T
+        content: TEST
+      -
+        ref: U
+        content: TEST
+      -
+        ref: V
+        content: TEST
+      -
+        ref: W
+        content: TEST
+      -
+        ref: X
+        content: TEST
+      -
+        ref: Y
+        content: TEST
+      -
+        ref: Z
+        content: TEST
 widget-TeamQuickSearch:
   filters:
     - "Filter"

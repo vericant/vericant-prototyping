@@ -1,0 +1,9 @@
+<div class="container-border">
+  <div class="inner-row">
+    <h2 class="title type-header-medium">{{title}}</h2>
+    {{> input title="" placeholder="Student Name"}}
+    {{> select title="" options=dashboard-widgets.widget-StudentQuickSearch.filters}}
+    {{> select title="" options=dashboard-widgets.widget-StudentQuickSearch.filters2}}
+  </div>
+  {{> tab-container data=dashboard-widgets.widget-StudentQuickSearch.tabs}}
+</div>
