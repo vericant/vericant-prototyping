@@ -9,7 +9,7 @@ from fabric.api import cd, env, local, parallel, prefix, put, run, sudo, task
 from fabric.colors import green, magenta, yellow, red
 from fabric.context_managers import shell_env
 
-import requests
+
 
 DEFAULTS = {
     'user': 'vericant',
@@ -67,9 +67,21 @@ def _env(server):
 
 def _local_build():
     print magenta('Running NPM install and post-install scripts')
-    local('npm install')
+    local('yarn install')
 
 def _remote_upload(host, remote_path, local_path):
     print magenta('Deploying Compilation to {}...'.format(host), bold=True)
     local('scp -r {}/* {}:{}'
         .format(local_path, host, remote_path))
+
+def _get_conf(key, host=None):
+    host_string = host if host else env.host_string
+    conf_dict = _get_conf_dict(host_string)
+    return conf_dict.get(key)
+
+def _get_conf_dict(host):
+    hosts = {SERVERS[k]['host']: SERVERS[k] for k in SERVERS}
+    if host in hosts:
+        return dict(DEFAULTS.items() + hosts[host].items())
+    else:
+        return DEFAULTS
