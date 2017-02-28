@@ -70,9 +70,15 @@ def _local_build():
     local('yarn install')
 
 def _remote_upload(host, remote_path, local_path):
+    _clear_remote(host, remote_path)
     print magenta('Deploying Compilation to {}...'.format(host), bold=True)
     local('scp -r {}/* {}:{}'
         .format(local_path, host, remote_path))
+
+def _clear_remote(host, remote_path):
+    print magenta('Cleaning Remote Path')
+    local('ssh {} "rm -fr {}/*"'
+        .format(host, remote_path))
 
 def _get_conf(key, host=None):
     host_string = host if host else env.host_string
