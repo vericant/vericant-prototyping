@@ -20,11 +20,10 @@
   {{> proto-header}}
 
   {{> top}}
-
   {{> header-original}}
   {{> breadcrumbs-dash}}
     <div class="header-nav dashboard-header">
-      {{> header-nav data=urls.navigation-dash}}
+      {{> (lookup . 'nav')}}
     </div>
 
     <div class="container main_container">

@@ -1,0 +1,19 @@
+---
+title: US 515 - Student Registration Counselor Information form
+prototype: true
+---
+
+<div class="lt-section-padding-medium">
+  <div class="row align-center">
+    <div class="columns small-10">
+      {{>heading-block data=taiga.515.heading-block}}
+      {{>formContainer data=taiga.515.initialForm cssClass='form-full'}}
+      <div class="row small-collapse align-middle align-center" style="border: 1px solid; margin-top: 1rem; padding-top: 1rem; padding-bottom: 1rem">
+        <h5 class="type-subtitle-medium text-center">
+          Optional Form Elements, appearing according to the criteria noted above:
+        </h5>
+        {{>formContainer data=taiga.515.companyForm}}
+      </div>
+    </div>
+  </div>
+</div>

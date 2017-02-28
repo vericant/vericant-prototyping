@@ -6,10 +6,14 @@
 }
 
 .form {
+  &-error {
+    margin-top: 0;
+  }
   input {
       outline: none;
   }
   &.form-full {
+    @include flex-align(center)
     .input-wrapper {
       @include flex-grid-column(10, 2rem);
       margin-top: .5rem;
@@ -357,7 +361,6 @@
   }
 
   small {
-    color: $secondary-color;
     text-align: left;
 
     &.terms {

@@ -1,15 +1,19 @@
 <div class="input-wrapper {{cssClass}}">
-    <label class="text-left">
-        <span class="input-label">{{title}}
-          {{#if required}}
-            <small class='required'>Required</small>
-          {{/if}}
-        </span>
-      </label>
-        <select name="{{title}}" class="select" {{#if required}}required{{/if}} {{#if multiple}}multiple{{/if}} {{#if pattern}}data-validator="{{pattern}}"{{/if}} {{#if disabled}}disabled{{/if}}>
-          {{#each options}}
-                    <option value="{{this}}" {{#compare 'this' '@../title' operator='=='}}"selected=\"selected\"" {{/compare}}>{{this}}</option>
-          {{/each}}
-        </select>
-            <small class="form-error">{{errorMsg}}</small>
+  <label class="text-left">
+    <span class="input-label">{{title}}
+      {{#if required}}
+      <small class='required'>Required</small>
+      {{/if}}
+    </span>
+  </label>
+  <select name="{{title}}" class="select" {{#if required}}required{{/if}} {{#if multiple}}multiple{{/if}} {{#if pattern}}data-validator="{{pattern}}"{{/if}} {{#if disabled}}disabled{{/if}}>
+    {{#each options}}
+    <option value="{{this}}" {{#compare 'this' '@../title' operator='=='}}"selected=\"selected\"" {{/compare}}>{{this}}</option>
+    {{/each}}
+  </select>
+  {{#if notes}}
+    <small class="form-error" style="display: block">{{{notes}}}</small>
+  {{else}}
+    <small class="form-error">{{errorMsg}}</small>
+  {{/if}}
 </div>

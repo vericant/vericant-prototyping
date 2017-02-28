@@ -9,32 +9,36 @@
       title: "Are you using a consultant/agent/counselor?"
       type: "select"
       default: "NO"
+      required: true
       options:
         - "YES"
         - "NO"
+      notes: >
+        <ul>
+          <li>If No, then no additional fields will be present</li>
+          <li>If Yes, then the next dropdown "Company" will appear. Select2 interface meaning a part of the company name must be typed for results to appear</li>
+        </ul>
     -
-      title: "If so, please select the company or affiliation. If not listed, choose OTHER. If independent, choose N/A."
+      title: "If so, please select the company or affiliation. If not listed, type OTHER. If no company affiliation, type INDEPENDENT."
       type: "select"
       placeholder: "Consultant Company"
       options:
+        - "Please select a Consultant Company/Agency"
+        - "OTHER"
+        - "INDEPENDENT"
         - "BJ - Aoji Edu"
         - "BJ - Art Life"
         - "BJ - Can-Achieve"
         - "BJ - CEDCA"
         - "BJ - Due West"
         - "BJ - EduLinkUS"
-    -
-      title: "Are you associated/working with a specific individual? If you don't see your consultant listed, choose OTHER. If no individual has been assigned to you from this organization, choose N/A"
-      type: "select"
-      placeholder: "Agent or individual"
-      options:
-        - "John Doe"
-        - "Mark Johnson"
-        - "Scarlet Johansenn"
-        - "Guy Super"
-        - "Brandon Wade"
-        - "Rory Michaelson"
-        - "Rachel Princess Amidala"
+      notes: >
+        <ul>
+          <li>Other or Independent should be clearly visible in the dropdown automatically if possible</li>
+          <li>If OTHER is selected -> All the form inputs shown in the box below will be rendered</li>
+          <li>If INDEPENDENT ..or.. a specific company is chosen, then the Consultant Name/Phone/E-Mail fields will be shown</li>
+          <li>The Individual consultant dropdown menu has been removed...</li>
+        </ul>
   companyForm:
     -
       title: "Education Company/Affiliation Name"

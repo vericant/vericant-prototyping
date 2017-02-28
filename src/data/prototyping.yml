@@ -4,15 +4,15 @@ navigation:
     url: "#"
     sub-nav:
       -
-        title: "Students++"
-        url: "/students"
-      -
         title: "Admin Dashboard"
         url: "/dashboard"
+      -
+        title: "Scheduler++"
+        url: "/scheduler"
   -
     title: Taiga Prototypes
     url: "#"
     sub-nav:
       -
         title: 515
-        url: "/taiga-proto/515.html"
+        url: "/taiga/515.html"

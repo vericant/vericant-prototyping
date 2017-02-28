@@ -157,3 +157,22 @@ navigation-dash:
       -
         title: "Users"
         slug: "users"
+navigation-scheduler:
+  -
+    title: "Vericant Scheduler++"
+    slug: "scheduler"
+    url: "/scheduler"
+    nav-items:
+      -
+        title: "Scheduler"
+        slug: "scheduler"
+      -
+        title: "Interview Cities"
+        slug: "cities"
+      
+      -
+        title: "Interview Locations"
+        slug: "locations"
+      -
+        title: "Users"
+        slug: "users"
