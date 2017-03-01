@@ -45,6 +45,7 @@
     "lab": "7.3.0",
     "motion-ui": "^1.2.2",
     "object-fit-images": "^2.5.3",
+    "open-iconic": "^1.1.1",
     "panini": "^1.0.0",
     "rimraf": "^2.4.3",
     "run-sequence": "^1.1.0",

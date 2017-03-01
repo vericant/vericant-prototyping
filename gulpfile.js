@@ -29,11 +29,15 @@ var PATHS = {
   assets: [
     'src/assets/**/*',
     '!src/assets/{js,scss}/**/*',
+    'node_modules/open-iconic/font/fonts/**/*',
   ],
   images: [],
+  fonts: [
+    'node_modules/open-iconic/font/fonts',
+  ],
   sass: [
     'node_modules/foundation-sites/scss',
-    'node_modules/motion-ui/src/'
+    'node_modules/motion-ui/src/',
   ],
   javascript: [
     'node_modules/foundation-sites/vendor/jquery/dist/jquery.js',
