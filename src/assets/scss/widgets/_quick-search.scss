@@ -17,10 +17,27 @@
     }
   }
 
+  &.collapse {
+    padding-top: 0;
+
+    .inner-row {
+      margin-top: 0;
+    }
+  }
+
   .title {
     position: absolute;
     top: -1rem;
     left: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: $white;
+  }
+
+  .date {
+    position: absolute;
+    bottom: -0.5rem;
+    right: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-color: $white;

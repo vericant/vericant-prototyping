@@ -1,0 +1,42 @@
+.accordion {
+    border: none;
+
+    &-content {
+      border: none !important;
+        @include breakpoint(large up) {
+            padding:0;
+            display: block !important;
+        }
+    }
+
+    &-title {
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &:before {
+            content: '';
+            @include background-arrow('down', $secondary-color, '1px');
+            background-size: cover;
+            background-repeat:no-repeat;
+            width: 15px;
+            height: 8px;
+            margin-top: 0;
+        }
+
+        .is-active & {
+            border-bottom:0;
+            &:before {
+                content: '';
+                @include background-arrow('up', $secondary-color, '1px');
+            }
+        }
+    }
+}
+
+.small-12 .accordion-filter {
+    @include breakpoint(medium down) {
+        margin: 0 -10px;
+    }
+}

@@ -1,0 +1,89 @@
+filters:
+  country:
+    title: "Country"
+    type: "select"
+    placeholder: "Please Select a Country"
+    options:
+      - "Please select a Country"
+      - "United States"
+      - "People's Republic of China"
+      - "Democratic Republic of China (Taiwan)"
+      - "Hong Kong SAR"
+      - "United Kingdom"
+      - "Australia"
+      - "Canada"
+      - "Mexico"
+  city:
+    title: "City"
+    type: "checkbox"
+    placeholder: "Please Select Cities"
+    options:
+      - All
+      - Beijing
+      - Hong Kong
+      - Chengdu
+      - Xian
+      - Dalian
+      - Taipei
+      - Seoul
+      - Qingdao
+      - Hangzhou
+      - Guangzho
+      - Shenzhen
+      - Wuhan
+      - Xiamen
+      - Jinan
+      - Nanjing
+      - NYC
+      - Washington, D.C.
+      - Burlington
+      - Tokyo
+      - Pennsylvania
+      - Montreal
+    cssClass: "lt-columns-2"
+  location:
+    title: "Location"
+    type: "checkbox"
+    placeholder: "Please Select Office Location"
+    options:
+      - All
+      - 北京 Office
+      - 北京盈科
+      - 上海陆家嘴
+      - 香港
+      - 成都REGUS
+      - 西安REGUS
+      - 大连REGUS
+      - 台北REGUS
+      - 首尔REGUS
+      - 青岛REGUS
+      - 杭州REGUS
+  interviewer:
+    title: "Interviewer"
+    type: "checkbox"
+    placeholder: "Please Select Interviewer"
+    options:
+      - All
+      - AA
+      - AS
+      - AW
+      - BW
+      - Carrie
+      - CB
+      - CC
+      - CF
+      - Chester
+      - CW
+      - DM
+      - DW
+      - EG
+      - EL
+      - Elliot
+      - ET
+      - Guy
+      - HG
+      - JB
+      - JC
+      - JD
+      - JLa
+    cssClass: "lt-columns-2"

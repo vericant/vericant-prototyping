@@ -1,0 +1,10 @@
+<div class="input-wrapper {{cssClass}}">
+  <label class="text-left">{{title}}</label>
+  {{#each options}}
+  <div class="checkbox-container" data-id="@option.Value" data-sid="@option.Id">
+    <input checked="checked" id="{{this}}" name="{{this}}" type="checkbox" value="true">
+    <input name="{{this}}" type="hidden" value="false">
+    <label for="{{this}}" class="checkbox icon-font-after">{{this}}</label>
+  </div>
+  {{/each}}
+</div>

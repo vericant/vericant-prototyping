@@ -2,6 +2,46 @@
 $module: '.icon';
 
 #{$module} {
+    /* OPEN-ICONIC */
+    &-font {
+      font-family: 'Icons';
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-decoration: inherit;
+
+      &-before {
+        &:before {
+          font-family: 'Icons';
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-decoration: inherit;
+        }
+      }
+
+      &-after {
+        &:after {
+          font-family: 'Icons';
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-decoration: inherit;
+        }
+      }
+    }
+
+    /* CUSTOMIZED ICONS */
+
     background-repeat:no-repeat;
     /*background-size: contain;*/
     background-position: initial;
@@ -13,26 +53,25 @@ $module: '.icon';
     border-radius: 50%;
   }
 
-    &.svg {
-        display:inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        fill: currentColor;
+  &.svg {
+      display:inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      fill: currentColor;
 
-        &.is-large {
-            width: 3rem;
-            height: 3rem;
-        }
-    }
+      &.is-large {
+          width: 3rem;
+          height: 3rem;
+      }
+  }
 
-    &.icon-gray {
-        fill: $dark-gray;
-    }
+  &.icon-gray {
+      fill: $dark-gray;
+  }
 
-    &.icon-white {
-        fill: white;
-    }
-
+  &.icon-white {
+      fill: white;
+  }
 }
 
 

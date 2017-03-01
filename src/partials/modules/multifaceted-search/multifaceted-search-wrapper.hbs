@@ -1,0 +1,8 @@
+<div class="form form-full multi-faceted accordion is-accordion-small is-accordion-medium accordion-filter" data-accordion data-allow-all-closed="true">
+    <div class="accordion-item is-active" data-accordion-item>
+        <a class="accordion-title hide-for-large type-header-small">{{title}}</a>
+        <div class="accordion-content accordion-first-pane" data-tab-content>
+            {{> (lookup . 'filter')}}
+        </div>
+    </div>
+</div>

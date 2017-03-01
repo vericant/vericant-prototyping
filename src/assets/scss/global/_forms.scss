@@ -3,6 +3,18 @@
   input, select, textarea {
     margin-bottom: 0;
   }
+
+  &.lt-columns-2 {
+    -moz-column-count: 2;
+    -moz-column-gap: 0;
+    -webkit-column-count: 2;
+    -webkit-column-gap : 0;
+    column-count: 2;
+
+    &>label {
+      column-span: all;
+    }
+  }
 }
 
 .form {
@@ -13,6 +25,7 @@
       outline: none;
   }
   &.form-full {
+    width: 100%;
     @include flex-align(center)
     .input-wrapper {
       @include flex-grid-column(10, 2rem);
@@ -24,6 +37,13 @@
 
       &.full {
         @include flex-grid-column(12, 2rem)
+      }
+    }
+
+    .accordion-content {
+      .input-wrapper {
+        @include flex-grid-column(12, 2rem);
+        margin-bottom: 0.5rem;
       }
     }
   }
@@ -479,7 +499,8 @@
             position:relative;
             padding-left: 1.75rem;
             cursor: pointer;
-            color:$light-gray;
+            color:$black;
+            text-align: left;
 
             &:before {
                 content: ' ';
@@ -496,11 +517,11 @@
                 opacity: 0;
                 content: "\2714";
                 position:absolute;
-                top: 2px;
+                top: 3px;
                 left: 3px;
                 font-size: 18px;
                 line-height: 20px;
-                color: $secondary-color;
+                color: $primary-color;
             }
         }
 
@@ -514,7 +535,7 @@
         }
 
         &:focus ~ label, & ~ label:hover {
-            color: $secondary-color;
+            color: $primary-color;
         }
       }
   }
@@ -575,7 +596,7 @@
         color: $light-gray;
         @include font-size(14);
         font-weight: 500;
-        margin-bottom: 5px;
+        margin-top: 5px;
 
         input[type='checkbox'] + input {
             margin-left: 10px;
@@ -713,33 +734,4 @@
 
 .mce-tinymce{
     margin-bottom: 1rem!important;
-}
-
-/* RTL STYLING CORRECTIONS (ARABIC) */
-html[dir="rtl"] {
-    label{
-        text-align:right;
-    }
-    .form {
-        .select {
-            padding-right: 0.5rem;
-            background-position: left -8px center;
-        }
-        small{
-            &.required{
-                float:left;
-            }
-        }
-    }
-
-    .large-text-right{
-        text-align:left;
-    }
-    .large-text-left{
-        text-align:right;
-    }
-
-    .mce-container-body{
-        text-align:right;
-    }
 }
