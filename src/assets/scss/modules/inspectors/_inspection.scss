@@ -1,0 +1,6 @@
+.container.main_container .rails_content {
+  &.inspection {
+    @include flex-grid-column(shrink);
+    width: 320px;
+  }
+}

@@ -1,0 +1,45 @@
+@import 'fullcalendar.css';
+
+// Classes
+$module: '.fc';
+
+#{$module} {
+  &-event {
+    background-color: $success-color;
+    font-weight: bold;
+    
+    &:hover {
+      background-color: lighten($success-color, 35);
+      color: $primary-color;
+    }
+
+    &.full-event {
+      background-color: $alert-color;
+
+      &:hover {
+        background-color: lighten($alert-color, 35);
+        color: $primary-color;
+      }
+    }
+    &.near-full-event {
+      background-color: $warning-color;
+
+      &:hover {
+        background-color: lighten($warning-color, 35);
+        color: $primary-color;
+      }
+    }
+  }
+
+
+
+  &-day-grid-event {
+    padding: .5rem .25rem;
+    text-align: center;
+
+    .fc-time {
+      position: absolute;
+      left: 2px;
+    }
+  }
+}

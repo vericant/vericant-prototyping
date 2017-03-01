@@ -29,7 +29,16 @@ var PATHS = {
   assets: [
     'src/assets/**/*',
     '!src/assets/{js,scss}/**/*',
-    'node_modules/open-iconic/font/fonts/**/*',
+  ],
+  copy: [
+    {
+      origin: 'node_modules/fullcalendar/dist/fullcalendar.css',
+      dest: 'assets/css/',
+    },
+    {
+      origin: 'node_modules/open-iconic/font/fonts/**/*',
+      dest: 'assets/fonts/',
+    },
   ],
   images: [],
   fonts: [
@@ -41,9 +50,11 @@ var PATHS = {
   ],
   javascript: [
     'node_modules/foundation-sites/vendor/jquery/dist/jquery.js',
+    'node_modules/moment/moment.js',
     'node_modules/what-input/what-input.js',
     'node_modules/foundation-sites/dist/js/foundation.js',
     'node_modules/object-fit-images/dist/ofi.browser.js',
+    'node_modules/fullcalendar/dist/fullcalendar.js',
     'src/assets/js/**/*.js',
     'src/assets/js/app.js'
   ],
@@ -64,6 +75,14 @@ gulp.task('copy', function() {
   gulp.src(PATHS.assets)
     .pipe(gulp.dest('./dist/assets'));
 });
+
+// Transfer Files to specific location in "dist" from "node_modules"
+gulp.task('transfer', function(){
+  for (i = 0; i < PATHS.copy.length; i++) {
+    gulp.src(PATHS.copy[i].origin)
+      .pipe(gulp.dest('./dist/'+PATHS.copy[i].dest))
+  }
+})
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {
@@ -178,7 +197,7 @@ gulp.task('images', function() {
 
 // Build the "dist" folder by running all of the above tasks
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy'], done);
+  sequence('clean', ['pages', 'sass', 'javascript', 'images', 'copy', 'transfer'], done);
 });
 
 gulp.task('development', function(done) {
@@ -231,5 +250,6 @@ gulp.task('default', ['build', 'server'], function() {
   gulp.watch(['./src/assets/scss/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/partials/**/*.scss'], ['sass', browser.reload]);
   gulp.watch(['./src/assets/js/**/*.js'], ['javascript', browser.reload]);
+  gulp.watch(['./src/data/**/*.yml'], ['pages:reset']);
   gulp.watch(['./src/assets/img/**/*'], ['images', browser.reload]);
 });
