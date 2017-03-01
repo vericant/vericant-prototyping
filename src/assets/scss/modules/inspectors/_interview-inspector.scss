@@ -1,39 +1,42 @@
-.inspector {
-  width: 100%;
-  padding: 0.5rem;
+.inspector.module {
 
-  &.interview-inspector {
-    .row {
-      padding-bottom: 0.75rem;
+  .inspector {
+    width: 100%;
+    padding: 0.5rem;
 
-      &:last-child {
-        border-bottom: 1px solid $dark-gray;
-      }
+    &.interview-inspector {
+      .row {
+        padding-bottom: 0.75rem;
 
-      @include flex-align(middle)
-      &-content {
-        @include flex-grid-column(7, 0);
+        &:last-child {
+          border-bottom: 1px solid $dark-gray;
+        }
+
+        @include flex-align(middle)
+        &-content {
+          @include flex-grid-column(7, 0);
+          .user-link {
+            margin: 0 0.5rem;
+          }
+        }
+        &-title {
+          @include flex-grid-column(5, 0);
+          text-align: right;
+        }
+
         .user-link {
-          margin: 0 0.5rem;
+          padding: 0.35rem;
+          border: 1px solid $light-gray;
+          box-shadow: 1px 1px 1px $medium-gray;
         }
       }
-      &-title {
-        @include flex-grid-column(5, 0);
-        text-align: right;
-      }
 
-      .user-link {
-        padding: 0.35rem;
-        border: 1px solid $light-gray;
-        box-shadow: 1px 1px 1px $medium-gray;
-      }
-    }
-
-    tbody {
-      td {
-        &.fill {
-          width: 100%;
-          text-align: left;
+      tbody {
+        td {
+          &.fill {
+            width: 100%;
+            text-align: left;
+          }
         }
       }
     }

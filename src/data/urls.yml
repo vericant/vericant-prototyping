@@ -110,7 +110,7 @@ navigation-dash:
         sub-nav:
           -
             title: "Interview Management Dashboard"
-            url: "/interview-processing/landing.html"
+            url: "/interview-mgmt"
             icon: "/assets/img/dashboard/nav-icons/dashboard.png"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
@@ -140,20 +140,20 @@ navigation-dash:
         sub-nav:
           -
             title: "Scheduler Dashboard"
-            url: "/scheduler/landing.html"
+            url: "/scheduler"
             icon: "/assets/img/dashboard/nav-icons/dashboard.png"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Interview Cities"
-            url: ""
+            url: "/scheduler/cities.html"
             icon: ""
             description: ""
           -
             title: "Interview Locations"
             url: ""
             icon: ""
-            description: ""
+            description: "/scheduler/location-setup.html"
       -
         title: "Users"
         slug: "users"
@@ -166,13 +166,11 @@ navigation-scheduler:
       -
         title: "Scheduler"
         slug: "scheduler"
-      -
-        title: "Interview Cities"
-        slug: "cities"
-      
+        url: "/scheduler"
       -
         title: "Interview Locations"
         slug: "locations"
+        url: /scheduler/location-setup.html
       -
         title: "Users"
         slug: "users"

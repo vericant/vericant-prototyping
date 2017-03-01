@@ -13,6 +13,35 @@ body {height: 100%;}
     @include flex-align(stretch)
     margin-bottom: 1rem;
 
+    .page-header {
+      @include flex-grid-column(12);
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $light-gray;
+      box-shadow: 0 0 8px $light-gray;
+
+      &-inner {
+        @include flex-grid-row();
+        @include flex-align(middle);
+      }
+
+
+      .title {
+        @include flex-grid-column(expand, 0)
+        font-weight: 100;
+      }
+
+      .modifiers {
+        @include flex-grid-column(shrink, 0)
+        margin: 0;
+        list-style-type: none;
+
+        .button {
+          margin-bottom: 0;
+        }
+      }
+    }
+
     .main_content {
       @include flex-grid-column(10);
       padding-left: 0 !important;

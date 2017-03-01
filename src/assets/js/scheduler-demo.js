@@ -46,5 +46,8 @@ $('#calendar').fullCalendar({
 		right: 'month,agendaWeek,agendaDay'
 	},
   editable: false,
-  events: object
+  events: object,
+  dayClick: function(date, jsEvent, view) {
+        $('#exampleModal1').foundation('open');
+    }
 });
