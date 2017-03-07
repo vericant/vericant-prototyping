@@ -54,28 +54,28 @@ navigation-dash:
           -
             title: "Student CRM Dashboard"
             url: "/students/landing.html"
-            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Applicants"
             url: ""
-            icon: ""
+            icon: "fi-person"
             description: ""
           -
             title: "Teams"
             url: ""
-            icon: ""
+            icon: "fi-people"
             description: ""
           -
             title: "Login as Students"
             url: ""
-            icon: ""
+            icon: "fi-lock-unlocked"
             description: ""
           -
             title: "Quick Search"
             url: ""
-            icon: ""
+            icon: "fi-magnifying-glass"
             description: ""
       -
         title: "School CRM"
@@ -84,25 +84,25 @@ navigation-dash:
           -
             title: "School CRM Dashboard"
             url: "/schools/landing.html"
-            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            icon: "fl-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "School User Management"
             url: ""
-            icon: ""
+            icon: "fi-clipboard"
             description: ""
           -
             title: "Login as School"
             url: ""
-            icon: ""
+            icon: "fi-lock-unlocked"
             description: >
               <p>Currently set as Fordham (U)</p>
               Reset
           -
             title: "Quick Search"
             url: ""
-            icon: ""
+            icon: "fi-magnifying-glass"
             description: ""
       -
         title: "Interview Management"
@@ -111,28 +111,28 @@ navigation-dash:
           -
             title: "Interview Management Dashboard"
             url: "/interview-mgmt"
-            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Interview Scheduling Report"
             url: ""
-            icon: ""
+            icon: "fi-calendar"
             description: ""
           -
             title: "Interview Data Entry"
             url: ""
-            icon: ""
+            icon: "fi-data-transfer-upload"
             description: ""
           -
             title: "Interviewed Students Report"
             url: ""
-            icon: ""
+            icon: "fi-document"
             description: ""
           -
             title: "Quick Search"
             url: ""
-            icon: ""
+            icon: "fi-magnifying-glass"
             description: ""
       -
         title: "Scheduling"
@@ -141,18 +141,18 @@ navigation-dash:
           -
             title: "Scheduler Dashboard"
             url: "/scheduler"
-            icon: "/assets/img/dashboard/nav-icons/dashboard.png"
+            icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Interview Cities"
             url: "/scheduler/cities.html"
-            icon: ""
+            icon: "fi-globe"
             description: ""
           -
             title: "Interview Locations"
             url: ""
-            icon: ""
+            icon: "fi-map-marker"
             description: "/scheduler/location-setup.html"
       -
         title: "Users"
