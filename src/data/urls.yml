@@ -61,22 +61,22 @@ navigation-dash:
             title: "Applicants"
             url: ""
             icon: "fi-person"
-            description: ""
+            description: "Look through the applicant database"
           -
             title: "Teams"
             url: ""
             icon: "fi-people"
-            description: ""
+            description: "Counselors and Agents please click here"
           -
             title: "Login as Students"
             url: ""
             icon: "fi-lock-unlocked"
-            description: ""
+            description: "See what information students see"
           -
             title: "Quick Search"
             url: ""
             icon: "fi-magnifying-glass"
-            description: ""
+            description: "Search for students names' or IDs"
       -
         title: "School CRM"
         slug: "school-crm"
@@ -91,19 +91,17 @@ navigation-dash:
             title: "School User Management"
             url: ""
             icon: "fi-clipboard"
-            description: ""
+            description: "Manage each school’s users"
           -
             title: "Login as School"
             url: ""
             icon: "fi-lock-unlocked"
-            description: >
-              <p>Currently set as Fordham (U)</p>
-              Reset
+            description: "See what information the schools see"
           -
             title: "Quick Search"
             url: ""
             icon: "fi-magnifying-glass"
-            description: ""
+            description: "Find a school"
       -
         title: "Interview Management"
         slug: "interviews"
@@ -118,22 +116,22 @@ navigation-dash:
             title: "Interview Scheduling Report"
             url: ""
             icon: "fi-calendar"
-            description: ""
+            description: "See past and future scheduled interviews"
           -
             title: "Interview Data Entry"
             url: ""
             icon: "fi-data-transfer-upload"
-            description: ""
+            description: "Input post-interview data entry"
           -
             title: "Interviewed Students Report"
             url: ""
             icon: "fi-document"
-            description: ""
+            description: "Watch students' interviews"
           -
             title: "Quick Search"
             url: ""
             icon: "fi-magnifying-glass"
-            description: ""
+            description: "Search for a student's name or ID"
       -
         title: "Scheduling"
         slug: "scheduler"
@@ -148,12 +146,12 @@ navigation-dash:
             title: "Interview Cities"
             url: ""
             icon: "fi-globe"
-            description: ""
+            description: "See in which cities we conduct interviews"
           -
             title: "Interview Locations"
             url: ""
             icon: "fi-map-marker"
-            description: ""
+            description: "See the locations of where we conduct interviews"
       -
         title: "Users"
         slug: "users"
