@@ -46,6 +46,10 @@ $module: '.icon';
     /*background-size: contain;*/
     background-position: initial;
 
+  &-circle {
+    border-radius: 50%;
+  }
+
   &-circle-large {
     width:140px;
     height: 140px;

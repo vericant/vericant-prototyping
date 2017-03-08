@@ -1,0 +1,45 @@
+---
+title: "Interview Locations Editor"
+layout: scheduler
+nav: header-scheduler
+---
+<style>
+  .module.inspector {display: none}
+</style>
+
+<div class="lt-section-padding-small">
+  <table class="table">
+    <thead>
+      <tr>
+        <th><input id="selectAll" type="checkbox"><label class="hide" for="selectAll">Selected</label></th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Internal Name</th>
+        <th>Internal Abbrv</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Order</th>
+        <th>Active Lock Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each scheduler-locations}}
+      <tr>
+        <td><input id="{{ID}}{{@index}}" type="checkbox"><label class="hide" for="{{ID}}{{@index}}">Selected</label></td>
+        <td>{{ID}}</td>
+        <td>{{title}}</td>
+        <td>{{internal-name}}</td>
+        <td>{{internal-abbr}}</td>
+        <td>{{phone}}</td>
+        <td>{{address}}</td>
+        <td>{{city}}</td>
+        <td>{{country}}</td>
+        <td>{{order}}</td>
+        <td>{{activeCount}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

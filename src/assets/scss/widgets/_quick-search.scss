@@ -19,19 +19,22 @@
 
   &.collapse {
     padding-top: 0;
-
-    .inner-row {
-      margin-top: 0;
-    }
   }
 
   .title {
     position: absolute;
-    top: -1rem;
     left: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-color: $white;
+
+    &.type-header-medium {
+      top: -1rem;
+    }
+
+    &.type-subtitle-large {
+      top: -0.7rem;
+    }
   }
 
   .date {
@@ -54,4 +57,9 @@
       padding-right: 0;
     }
   }
+}
+
+.title + .container-border {
+  margin-top: 0;
+  padding-top: 0;
 }

@@ -108,7 +108,7 @@ navigation-dash:
         sub-nav:
           -
             title: "Interview Management Dashboard"
-            url: "/interview-processing/landing.html"
+            url: "/interview-mgmt"
             icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
@@ -138,20 +138,24 @@ navigation-dash:
         sub-nav:
           -
             title: "Scheduler Dashboard"
-            url: "/scheduler/landing.html"
+            url: "/scheduler"
             icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
             title: "Interview Cities"
-            url: ""
+            url: "/scheduler/cities.html"
             icon: "fi-globe"
             description: "See in which cities we conduct interviews"
           -
             title: "Interview Locations"
             url: ""
             icon: "fi-map-marker"
+<<<<<<< HEAD
             description: "See the locations of where we conduct interviews"
+=======
+            description: "/scheduler/location-setup.html"
+>>>>>>> f2fd98debe96e9d507fe097537845140c1ee58a4
       -
         title: "Users"
         slug: "users"
@@ -164,13 +168,76 @@ navigation-scheduler:
       -
         title: "Scheduler"
         slug: "scheduler"
-      -
-        title: "Interview Cities"
-        slug: "cities"
-
+        url: "/scheduler"
       -
         title: "Interview Locations"
         slug: "locations"
+        url: /scheduler/location-setup.html
+      -
+        title: "Users"
+        slug: "users"
+navigation-interviewmgmt:
+  -
+    title: "Vericant Interview Mgmt++"
+    slug: "interview-mgmt"
+    url: "/interview-mgmt"
+    nav-items:
+      -
+        title: "Management Home"
+        slug: "interview-mgmt"
+        url: "/interview-mgmt"
+      -
+        title: "Post-Interview Data Entry"
+        slug: "post-interview"
+        url: /interview-mgmt/post-interview.html
+      -
+        title: "Reporting"
+        slug: "reports"
+        sub-nav:
+          -
+            title: "Proctor Worklog"
+            url: "/interview-mgmt/reporting/proctor-worklog.html"
+            icon: ""
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Interviewer Worklog"
+            url: "/interview-mgmt/reporting/interviewer-worklog.html"
+            icon: ""
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Due Date Summary"
+            url: "/interview-mgmt/reporting/reporting-duedate.html"
+            icon: ""
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+      -
+        title: "Utilities"
+        slug: "util"
+        sub-nav:
+          -
+            title: "Scanning Center"
+            url: "/interview-mgmt/util/scanning-center.html"
+            icon: ""
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Headshot Uploader"
+            url: "/interview-mgmt/util/headshots.html"
+            icon: ""
+            description: ""
+          -
+            title: "Questionsets"
+            url: "/interview-mgmt/util/questionsets.html"
+            icon: ""
+            description: >
+              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+          -
+            title: "Picturesets"
+            url: "/interview-mgmt/util/picturesets.html"
+            icon: ""
+            description: ""
       -
         title: "Users"
         slug: "users"
