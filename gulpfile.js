@@ -82,7 +82,7 @@ gulp.task('transfer', function(){
     gulp.src(PATHS.copy[i].origin)
       .pipe(gulp.dest('./dist/'+PATHS.copy[i].dest))
   }
-})
+});
 
 // Copy page templates into finished HTML files
 gulp.task('pages', function() {

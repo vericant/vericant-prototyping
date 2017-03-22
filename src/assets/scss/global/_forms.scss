@@ -26,7 +26,7 @@
   }
   &.form-full {
     width: 100%;
-    @include flex-align(center)
+    @include flex-align(center);
     .input-wrapper {
       @include flex-grid-column(10, 2rem);
       margin-top: .5rem;
