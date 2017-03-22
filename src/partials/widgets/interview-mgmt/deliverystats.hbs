@@ -1,0 +1,28 @@
+<div class="container-border">
+  <div class="inner-row">
+    <h2 class="title type-header-medium">{{title}}</h2>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Location</th>
+        <th colspan="2">Delivery Totals</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each interviewmgmt-dash.deliveries}}
+      <tr>
+        <td>{{datetime}}</td>
+        <td><a href="{{location.url}}">{{location.title}}<a/></td>
+        <td>{{count.completed}} / {{count.total}}</td>
+        <td>
+          <div class="container-blockgraph">
+            <!-- GRAPH BLOCKSS!!!! -->
+          </div>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

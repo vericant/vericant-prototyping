@@ -27,19 +27,12 @@
     </div>
 
     <div class="container main_container">
-      <div class="page-header">
-        <div class="page-header-inner">
-          <h2 class="title type-header-xlarge">{{title}}</h2>
-          <ul class="modifiers">
-            <li><a class="button icon-circle" data-open="exampleModal1">+</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="rails_content left inspection">
-        {{> rails-scheduler-calendar}}
-      </div>
       <div class="main_content">
         {{> body}}
+      </div>
+      <div class="rails_content right">
+        {{rails}}
+        {{> rails-interviewmgr}}
       </div>
     </div>
 

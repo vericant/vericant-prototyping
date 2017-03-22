@@ -84,7 +84,7 @@ navigation-dash:
           -
             title: "School CRM Dashboard"
             url: "/schools/landing.html"
-            icon: "fl-dashboard"
+            icon: "fi-dashboard"
             description: >
               Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
           -
@@ -151,11 +151,7 @@ navigation-dash:
             title: "Interview Locations"
             url: ""
             icon: "fi-map-marker"
-<<<<<<< HEAD
-            description: "See the locations of where we conduct interviews"
-=======
-            description: "/scheduler/location-setup.html"
->>>>>>> f2fd98debe96e9d507fe097537845140c1ee58a4
+            description: "See the locations of where we conduct interviews; /scheduler/location-setup.html"
       -
         title: "Users"
         slug: "users"
