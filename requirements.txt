@@ -1,0 +1,4 @@
+six==1.9.0
+packaging==16.8
+appdirs==1.4.3
+fabric==1.13.1

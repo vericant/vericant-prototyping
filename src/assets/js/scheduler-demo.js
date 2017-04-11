@@ -37,7 +37,7 @@ var object = [
       end: '2017-03-12T15:00:00',
       url: '#'
     },
-]
+];
 
 $('#calendar').fullCalendar({
   header: {
