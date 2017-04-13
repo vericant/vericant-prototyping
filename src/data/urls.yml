@@ -55,8 +55,7 @@ navigation-dash:
             title: "Student CRM Dashboard"
             url: "/students/landing.html"
             icon: "fi-dashboard"
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "Manage student CRM here"
           -
             title: "Applicants"
             url: ""
@@ -85,8 +84,7 @@ navigation-dash:
             title: "School CRM Dashboard"
             url: "/schools/landing.html"
             icon: "fl-dashboard"
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "Manage school CRM here"
           -
             title: "School User Management"
             url: ""
@@ -110,8 +108,7 @@ navigation-dash:
             title: "Interview Management Dashboard"
             url: "/interview-mgmt"
             icon: "fi-dashboard"
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "Manage interviews here"
           -
             title: "Interview Scheduling Report"
             url: ""
@@ -140,8 +137,7 @@ navigation-dash:
             title: "Scheduler Dashboard"
             url: "/scheduler"
             icon: "fi-dashboard"
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "View the schedule here"
           -
             title: "Interview Cities"
             url: "/scheduler/cities.html"
@@ -198,20 +194,17 @@ navigation-interviewmgmt:
             title: "Proctor Worklog"
             url: "/interview-mgmt/reporting/proctor-worklog.html"
             icon: ""
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "View proctor worklog history here"
           -
             title: "Interviewer Worklog"
             url: "/interview-mgmt/reporting/interviewer-worklog.html"
             icon: ""
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "View interviewer worklog history here"
           -
             title: "Due Date Summary"
             url: "/interview-mgmt/reporting/reporting-duedate.html"
             icon: ""
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            description: "View the video due dates here"
       -
         title: "Utilities"
         slug: "util"
@@ -219,25 +212,24 @@ navigation-interviewmgmt:
           -
             title: "Scanning Center"
             url: "/interview-mgmt/util/scanning-center.html"
-            icon: ""
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            icon: "fi-document"
+            description: "Upload scanned writing samples here"
+
           -
             title: "Headshot Uploader"
             url: "/interview-mgmt/util/headshots.html"
-            icon: ""
-            description: ""
+            icon: "fi-camera-slr"
+            description: "Upload headshots here"
           -
             title: "Questionsets"
             url: "/interview-mgmt/util/questionsets.html"
-            icon: ""
-            description: >
-              Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.
+            icon: "fi-list"
+            description: "Access question sets here"
           -
             title: "Picturesets"
             url: "/interview-mgmt/util/picturesets.html"
-            icon: ""
-            description: ""
+            icon: "fi-image"
+            description: "Access picture sets here"
       -
         title: "Users"
         slug: "users"
