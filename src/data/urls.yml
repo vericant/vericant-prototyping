@@ -83,6 +83,7 @@ navigation-dash:
           -
             title: "School CRM Dashboard"
             url: "/schools/landing.html"
+
             icon: "fl-dashboard"
             description: "Manage school CRM here"
           -
@@ -147,11 +148,7 @@ navigation-dash:
             title: "Interview Locations"
             url: ""
             icon: "fi-map-marker"
-<<<<<<< HEAD
-            description: "See the locations of where we conduct interviews"
-=======
-            description: "/scheduler/location-setup.html"
->>>>>>> f2fd98debe96e9d507fe097537845140c1ee58a4
+            description: "See the locations of where we conduct interviews; /scheduler/location-setup.html"
       -
         title: "Users"
         slug: "users"

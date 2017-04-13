@@ -10,7 +10,7 @@ body {height: 100%;}
 .container {
   &.main_container {
     @include flex-grid-row();
-    @include flex-align(stretch)
+    @include flex-align(stretch);
     margin-bottom: 1rem;
 
     .page-header {
@@ -27,12 +27,12 @@ body {height: 100%;}
 
 
       .title {
-        @include flex-grid-column(expand, 0)
+        @include flex-grid-column(expand, 0);
         font-weight: 100;
       }
 
       .modifiers {
-        @include flex-grid-column(shrink, 0)
+        @include flex-grid-column(shrink, 0);
         margin: 0;
         list-style-type: none;
 

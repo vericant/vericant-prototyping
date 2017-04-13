@@ -55,6 +55,18 @@ $module: '.icon';
     height: 140px;
     background-color: map-get($foundation-palette, primary);
     border-radius: 50%;
+
+    &.submenu-item-icon {
+      display: table;
+      &>span {
+          color: white;
+          font-size: 4rem;
+          font-weight: 100;
+          line-height: 1;
+          vertical-align: middle;
+          display: table-cell;
+      }
+    }
   }
 
   &.svg {
@@ -84,4 +96,11 @@ $highlighted: '.highlighted';
 
 #{$highlighted} {
 
+}
+
+
+// Open-Iconic Foundation
+.fi-account-login:before, .fi-account-logout:before, .fi-action-redo:before, .fi-action-undo:before, .fi-align-center:before, .fi-align-left:before, .fi-align-right:before, .fi-aperture:before, .fi-arrow-bottom:before, .fi-arrow-circle-bottom:before, .fi-arrow-circle-left:before, .fi-arrow-circle-right:before, .fi-arrow-circle-top:before, .fi-arrow-left:before, .fi-arrow-right:before, .fi-arrow-thick-bottom:before, .fi-arrow-thick-left:before, .fi-arrow-thick-right:before, .fi-arrow-thick-top:before, .fi-arrow-top:before, .fi-audio-spectrum:before, .fi-audio:before, .fi-badge:before, .fi-ban:before, .fi-bar-chart:before, .fi-basket:before, .fi-battery-empty:before, .fi-battery-full:before, .fi-beaker:before, .fi-bell:before, .fi-bluetooth:before, .fi-bold:before, .fi-bolt:before, .fi-book:before, .fi-bookmark:before, .fi-box:before, .fi-briefcase:before, .fi-british-pound:before, .fi-browser:before, .fi-brush:before, .fi-bug:before, .fi-bullhorn:before, .fi-calculator:before, .fi-calendar:before, .fi-camera-slr:before, .fi-caret-bottom:before, .fi-caret-left:before, .fi-caret-right:before, .fi-caret-top:before, .fi-cart:before, .fi-chat:before, .fi-check:before, .fi-chevron-bottom:before, .fi-chevron-left:before, .fi-chevron-right:before, .fi-chevron-top:before, .fi-circle-check:before, .fi-circle-x:before, .fi-clipboard:before, .fi-clock:before, .fi-cloud-download:before, .fi-cloud-upload:before, .fi-cloud:before, .fi-cloudy:before, .fi-code:before, .fi-cog:before, .fi-collapse-down:before, .fi-collapse-left:before, .fi-collapse-right:before, .fi-collapse-up:before, .fi-command:before, .fi-comment-square:before, .fi-compass:before, .fi-contrast:before, .fi-copywriting:before, .fi-credit-card:before, .fi-crop:before, .fi-dashboard:before, .fi-data-transfer-download:before, .fi-data-transfer-upload:before, .fi-delete:before, .fi-dial:before, .fi-document:before, .fi-dollar:before, .fi-double-quote-sans-left:before, .fi-double-quote-sans-right:before, .fi-double-quote-serif-left:before, .fi-double-quote-serif-right:before, .fi-droplet:before, .fi-eject:before, .fi-elevator:before, .fi-ellipses:before, .fi-envelope-closed:before, .fi-envelope-open:before, .fi-euro:before, .fi-excerpt:before, .fi-expand-down:before, .fi-expand-left:before, .fi-expand-right:before, .fi-expand-up:before, .fi-external-link:before, .fi-eye:before, .fi-eyedropper:before, .fi-file:before, .fi-fire:before, .fi-flag:before, .fi-flash:before, .fi-folder:before, .fi-fork:before, .fi-fullscreen-enter:before, .fi-fullscreen-exit:before, .fi-globe:before, .fi-graph:before, .fi-grid-four-up:before, .fi-grid-three-up:before, .fi-grid-two-up:before, .fi-hard-drive:before, .fi-header:before, .fi-headphones:before, .fi-heart:before, .fi-home:before, .fi-image:before, .fi-inbox:before, .fi-infinity:before, .fi-info:before, .fi-italic:before, .fi-justify-center:before, .fi-justify-left:before, .fi-justify-right:before, .fi-key:before, .fi-laptop:before, .fi-layers:before, .fi-lightbulb:before, .fi-link-broken:before, .fi-link-intact:before, .fi-list-rich:before, .fi-list:before, .fi-location:before, .fi-lock-locked:before, .fi-lock-unlocked:before, .fi-loop-circular:before, .fi-loop-square:before, .fi-loop:before, .fi-magnifying-glass:before, .fi-map-marker:before, .fi-map:before, .fi-media-pause:before, .fi-media-play:before, .fi-media-record:before, .fi-media-skip-backward:before, .fi-media-skip-forward:before, .fi-media-step-backward:before, .fi-media-step-forward:before, .fi-media-stop:before, .fi-medical-cross:before, .fi-menu:before, .fi-microphone:before, .fi-minus:before, .fi-monitor:before, .fi-moon:before, .fi-move:before, .fi-musical-note:before, .fi-paperclip:before, .fi-pencil:before, .fi-people:before, .fi-person:before, .fi-phone:before, .fi-pie-chart:before, .fi-pin:before, .fi-play-circle:before, .fi-plus:before, .fi-power-standby:before, .fi-print:before, .fi-project:before, .fi-pulse:before, .fi-puzzle-piece:before, .fi-question-mark:before, .fi-rain:before, .fi-random:before, .fi-reload:before, .fi-resize-both:before, .fi-resize-height:before, .fi-resize-width:before, .fi-rss-alt:before, .fi-rss:before, .fi-script:before, .fi-share-boxed:before, .fi-share:before, .fi-shield:before, .fi-signal:before, .fi-signpost:before, .fi-sort-ascending:before, .fi-sort-descending:before, .fi-spreadsheet:before, .fi-star:before, .fi-sun:before, .fi-tablet:before, .fi-tag:before, .fi-tags:before, .fi-target:before, .fi-task:before, .fi-terminal:before, .fi-text:before, .fi-thumb-down:before, .fi-thumb-up:before, .fi-timer:before, .fi-transfer:before, .fi-trash:before, .fi-underline:before, .fi-vertical-align-bottom:before, .fi-vertical-align-center:before, .fi-vertical-align-top:before, .fi-video:before, .fi-volume-high:before, .fi-volume-low:before, .fi-volume-off:before, .fi-warning:before, .fi-wifi:before, .fi-wrench:before, .fi-x:before, .fi-yen:before, .fi-zoom-in:before, .fi-zoom-out:before {
+  position: relative;
+  top: 9px;
 }
